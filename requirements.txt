@@ -1,32 +1,56 @@
-streamlit
+# Core LangChain
 langchain
-python-dotenv
-ipykernel
 langchain-community
-pypdf
-bs4
-arxiv
-pymupdf
-wikipedia
-langchain-text-splitters
+langchain-huggingface
 langchain-openai
+langchain-groq            # Only keep if you still intend to use Groq's LLM
+langchain-text-splitters
+langchain_chroma
+
+# Streamlit (for your UI)
+streamlit
+
+# Tools / APIs
+duckduckgo-search
+arxiv
+wikipedia
+
+# Document Handling
+pypdf
+pymupdf
+unstructured
+youtube_transcript_api
+pytube
+
+# Vector Stores / Embeddings
+faiss-cpu
 chromadb
 sentence_transformers
-langchain_huggingface
-faiss-cpu
-langchain_chroma
-duckdb
-pandas
-openai
-langchain-groq
-duckduckgo-search
-mysql-connector-python
-SQLAlchemy
-validators==0.28.1
-youtube_transcript_api
-unstructured
-pytube
-numexpr
 huggingface_hub
-langchain-embeddings-huggingface
-langchain-embeddings-openai
+
+# PyData stack
+pandas
+numpy                    # Some packages might rely on numpy; add if missing
+SQLAlchemy
+mysql-connector-python
+
+# Web / HTML
+bs4
+validators
+
+# LLM-related
+openai                   # For OpenAI usage, remove if not needed
+# You may also need explicit transformers + torch if you do local inference:
+# transformers
+# torch
+
+# Misc / Others
+python-dotenv
+ipykernel
+numexpr
+pydantic-core
+
+langchain-groq
+
+# Because you re-listed langchain multiple times, only one instance is needed
+# If you want pinned versions, add '==X.X.X' after each package
